@@ -32,14 +32,14 @@ void heapify(int arr[], int n, int i)
 }
 
 // main function to do heap sort
-void heapSort(int arr[], int n)
+void heapSort(int arr[], int nn)
 {
 	// Build heap (rearrange array)
-	for (int i = n / 2 - 1; i >= 0; i--)
-		heapify(arr, n, i);
+	for (int i = nn / 2 - 1; i >= 0; i--)
+		heapify(arr, nn, i);
 
 	// One by one extract an element from heap
-	for (int i = n - 1; i > 0; i--) {
+	for (int i = nn - 1; i > 0; i--) {
 		// Move current root to end
 		swap(arr[0], arr[i]);
 
