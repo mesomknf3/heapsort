@@ -14,7 +14,9 @@ void heapify(int arr[], int n, int i)
 
 	// If left child is larger than root
 	if (l < n && arr[l] > arr[largest])
+		cout<<"And largest "
 		largest = l;
+	
 
 	// If right child is larger than largest so far
 	if (r < n && arr[r] > arr[largest])
