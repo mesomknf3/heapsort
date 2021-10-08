@@ -57,7 +57,7 @@ void printArray(int arr[], int n)
 // Driver code
 int main()
 {
-	int arr[] = { 12, 11, 13, 5, 6, 7 };
+	int arr[] = { 12, 11, 13, 5, 6, 7 , 7, 8, 9, 1, 2, 3 , 6 , 5};
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 	heapSort(arr, n);
