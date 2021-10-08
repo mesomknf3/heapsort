@@ -14,7 +14,9 @@ void heapify(int arr[], int n, int i)
 
 	// If left child is larger than root
 	if (l < n && arr[l] > arr[largest])
+		cout<<"And largest "
 		largest = l;
+	
 
 	// If right child is larger than largest so far
 	if (r < n && arr[r] > arr[largest])
@@ -57,9 +59,16 @@ void printArray(int arr[], int n)
 // Driver code
 int main()
 {
-	int arr[] = { 12, 11, 13, 5, 6, 7, 5, 6, 7, 50, 32, 434, 1, 3 };
+
 	int n = sizeof(arr) / sizeof(arr[0]);
 
+
+	int arr[] = { 12, 11, 13, 5, 6, 7 ,1,3,3,4};
+
+
+	int n = sizeof(arr) / sizeof(arr[0]);
+	cout<<53;
+	cout<<"Hacktoberfest2021";
 	heapSort(arr, n);
 
 	cout << "Sorted array is \n";
