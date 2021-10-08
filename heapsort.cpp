@@ -60,6 +60,9 @@ void printArray(int arr[], int n)
 int main()
 {
 
+	int n = sizeof(arr) / sizeof(arr[0]);
+
+
 	int arr[] = { 12, 11, 13, 5, 6, 7 ,1,3,3,4};
 
 
