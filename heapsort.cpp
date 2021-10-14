@@ -69,6 +69,7 @@ int main()
 	int n = sizeof(arr) / sizeof(arr[0]);
 	cout<<53;
 	cout<<"Hacktoberfest2021";
+	cout << "thank u DigitalOcean"
 	heapSort(arr, n);
 
 	cout << "Sorted array is \n";
