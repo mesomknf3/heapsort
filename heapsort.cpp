@@ -27,7 +27,7 @@ void heapifyInRoot(int arr[], int n, int i)
 		swap(arr[i], arr[largest]);
 
 		// Recursively heapify the affected sub-tree
-		heapifyInRoot(arr, n, largest);
+
 	}
 }
 
@@ -44,7 +44,11 @@ void heapSort(int arr[], int nn)
 		swap(arr[0], arr[i]);
 
 		// call max heapify on the reduced heap
+
 		heapifyInRoot(arr, i, 0);
+
+		spotify(arr, i, 0);
+
 	}
 }
 
