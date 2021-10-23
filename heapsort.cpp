@@ -8,7 +8,7 @@ using namespace std;
 
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
-void heapifyInRoot(int arr[], int n, int i)
+void heapifyOnRoot(int arr[], int n, int i)
 {
 	int largest = i; // Initialize largest as root
 	int p = 2 * i + 1; // left = 2*i + 1
@@ -38,7 +38,7 @@ void heapSort(int arr[], int nn)
 {
 	// Build heap (rearrange array)
 	for (int i = nn / 2 - 1; i >= 0; i--)
-		heapifyInRoot(arr, nn, i);
+		heapifyOnRoot(arr, nn, i);
 
 	// One by one extract an element from heap
 	for (int i = nn - 1; i > 0; i--) {
@@ -47,7 +47,7 @@ void heapSort(int arr[], int nn)
 
 		// call max heapify on the reduced heap
 
-		heapifyInRoot(arr, i, 0);
+		heapifyOnRoot(arr, i, 0);
 
 		spotify(arr, i, 0);
 
