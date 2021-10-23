@@ -1,7 +1,7 @@
 
 // C++ program for implementation of Heap Sort
-#include <iostream>
-#include <algorithm.h>
+#include <bits/stdc++.h>
+// #include <algorithm.h>
  
 using namespace std;
 
