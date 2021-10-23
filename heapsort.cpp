@@ -1,9 +1,10 @@
 
 // C++ program for implementation of Heap Sort
-#include <iostream>
-#include <algorithm.h>
+#include <bits/stdc++.h>
+// #include <algorithm.h>
  
 using namespace std;
+
 
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
@@ -31,7 +32,7 @@ void heapifyInRoot(int arr[], int n, int i)
 
 	}
 }
-
+// Heap sort is a comparison-based sorting technique based on Binary Heap data structure
 // main function to do heap sort
 void heapSort(int arr[], int nn)
 {
@@ -59,6 +60,7 @@ void printArray(int arr[], int n)
 	for (int i = 0; i < n; ++i)
 		printf("%d ", arr[i]);
     printf("\n");
+
 }
 
 // Driver code
