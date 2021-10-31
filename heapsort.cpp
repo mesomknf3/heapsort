@@ -68,11 +68,11 @@ int main()
 	int n = sizeof(arr) / sizeof(arr[0]);
 
 
-	int arr[] = { 12, 11, 13, 45,78,36, 5, 6, 7 ,1,3,5,6};
+	int arr[] = { 11, 10, 3, 15,48,17, 5, 6, 71 ,1,13,25,16};
 
 
 	int n = sizeof(arr) / sizeof(arr[0]);
-	cout<<53;
+	cout<< 15 ;
 	cout<<"Hacktoberfest2021";
 	cout << "thank u DigitalOcean"
 	heapSort(arr, n);
