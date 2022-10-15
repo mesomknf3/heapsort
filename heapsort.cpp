@@ -8,7 +8,7 @@ using namespace std;
 
 // To heapify a subtree rooted with node i which is
 // an index in arr[]. n is size of heap
-void heapifyOnRoot(int arr[], int n, int i)
+void heapifyOnRoot(vector<int> arr, int n, int i)
 {
 	int largest = i; // Initialize largest as root
 	int p = 2 * i + 1; // left = 2*i + 1
@@ -34,9 +34,10 @@ void heapifyOnRoot(int arr[], int n, int i)
 }
 // Heap sort is a comparison-based sorting technique based on Binary Heap data structure
 // main function to do heap sort
-void heapSort(int arr[], int nn)
+void heapSort(vector<int> arr)
 {
 	// Build heap (rearrange array)
+	int nn = arr.size();
 	for (int i = nn / 2 - 1; i >= 0; i--)
 		heapifyOnRoot(arr, nn, i);
 
@@ -55,9 +56,11 @@ void heapSort(int arr[], int nn)
 }
 
 /* A utility function to print array of size n */
-void printArray(int arr[], int n)
+void printArray(vector<int> arr)
 {
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < arr.size(); ++i)
+		cout<<arr[i]<<" ";
+	cout<<endl;
 
 }
 
@@ -65,19 +68,17 @@ void printArray(int arr[], int n)
 int main()
 {
 
-	int n = sizeof(arr) / sizeof(arr[0]);
+	vector<int> arr = { 11, 10, 3, 15,48,17, 5, 6, 71 ,1,13,25,16};
 
-
-	int arr[] = { 11, 10, 3, 15,48,17, 5, 6, 71 ,1,13,25,16};
-
-
-	int n = sizeof(arr) / sizeof(arr[0]);
+// 	int arr[] = { 11, 10, 3, 15,48,17, 5, 6, 71 ,1,13,25,16};
+// 	int n = sizeof(arr) / sizeof(arr[0]);
+	
 	cout<< 15 ;
 	cout<<"Hacktoberfest2021";
 	cout << "thank u DigitalOcean"
-	heapSort(arr, n);
+	heapSort(arr);
 
 	cout << "Sorted array is \n";
 	cout << "Sorted array is: \n";
-	printArray(arr, n);
+	printArray(arr);
 }
